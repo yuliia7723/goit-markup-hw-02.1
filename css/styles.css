@@ -101,6 +101,8 @@ text-transform: uppercase;
   background-color: var(--second-btn-color);
   color: var(--color-main-title);
   cursor: pointer;
+  display: block;
+  margin: 0 auto;
 }
 .button-main:hover {
   color:var(--main-btn-color);
