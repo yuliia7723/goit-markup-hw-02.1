@@ -55,15 +55,24 @@ padding-right: 15px;
 margin: 0 auto;
 outline: 2px;
 }
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .nav-header {
   margin: 94px;
 }
+
 .nav-link {
   color: var(--main-title-color);
 font-weight: 500;
   letter-spacing: 0.02em;
   line-height: calc(16 / 14);
   text-decoration: none;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  margin-right: 50px;
+  margin-left: 93px;
 }
 .nav-link:hover {
   color:var(--second-btn-color);
@@ -81,6 +90,10 @@ line-height: calc( 31 / 26 );
 letter-spacing: 0.03em;
 font-weight: 700;
 font-size: 26px;
+padding-top: 24px;
+padding-bottom: 25px;
+margin-right: 93px;
+margin-left: 215px;
 }
 .accent {
   color: var(--second-btn-color);
@@ -93,6 +106,9 @@ font-weight: 500;
   line-height: calc( 16 / 14 );
   letter-spacing: 0.02em;
   color:var(--second-title-color);
+  padding-top: 32px;
+  padding-bottom: 32px;
+  margin-right: 50px;
 
 }
 .contact-link:hover {
@@ -107,6 +123,12 @@ letter-spacing: 0.02em;
 font-weight: 500;
  line-height: calc( 16 / 14 );
 }
+.contact-list {
+  margin-left: 344px;
+}
+.number {
+  margin-right: 215px;
+}
 
 .hero-title {
   color:var(--color-header);
@@ -115,6 +137,16 @@ font-weight: 500;
   letter-spacing: 0.06em;
 font-size: 44px;
 text-transform: uppercase;
+margin-bottom: 30px;
+padding-top: 200px;
+padding-bottom: 280px;
+max-width: 696px;
+ cursor: pointer;
+  display: block;
+  margin:  0  auto ;
+
+
+
 }
 .hero {
   background-color: var(--background-footer-color);
@@ -161,22 +193,33 @@ text-transform: uppercase;
 .feature {
 color:var(--main-background-color);
 margin: 118px;
+cursor: pointer;
+  display: block;
+  margin:  0  auto ;
 }
 .feature-title {
   color: var(--main-title-color);
 line-height: calc(14 / 16);
   letter-spacing: 0.03em;
-  font-size: 14px;}
+  font-size: 14px;
+  margin-bottom: 10px;
+}
   
 
 .feature-advance {
   color: var(--second-title-color);
- 
-  line-height: calc(14 / 24);
+  max-width: 270px;
+ line-height: calc(24 / 14);
   letter-spacing: 0.03em;
- 
+  padding-top: 26px;
+  padding-bottom: 24px;
   
-}
+ }
+
+ .feature-list {
+  margin-bottom: 10px;
+
+ }
 
 /* /photo section about*/
 
@@ -184,9 +227,13 @@ line-height: calc(14 / 16);
 font-size: 36px;
 letter-spacing: 0.03em;
  line-height: calc( 42 / 36 );
+ margin-bottom: 50px;
 }
 .section-title {
   background-color: var(--second-background-color);
+}
+.section-list {
+  margin-bottom: 188px;
 }
 
 /* team */
@@ -198,6 +245,7 @@ letter-spacing: 0.03em;
 font-size: 36px;
 letter-spacing: 0,03;
  line-height: calc( 42 / 36 );
+ margin-bottom: 50px;
 }
 
 
@@ -218,6 +266,9 @@ letter-spacing: 0.03em;
  
  line-height: calc( 19 / 16 );
  
+}
+.img-list {
+  margin-bottom: 94px;
 }
 
 /* addres */
@@ -275,6 +326,9 @@ font-size: 26px;
 .filter {
   margin: 56px;
 }
+.button-list {
+  margin-bottom: 56px;
+}
 
 .button-filter {
  font-family:inherit;
@@ -285,6 +339,8 @@ font-size: 26px;
   cursor: pointer;
   color: var(--color-btn-text);
 background-color: var(--color-main-btn);
+padding: 6 22 6 22;
+margin-right: 8px;
 }
 .button-filter:hover {
 background-color: var(--second-btn-color);
@@ -299,28 +355,72 @@ background-color: var(--second-btn-color);
   color:var(--second-btn-color);}
 
 /* project */
+.card-set {
+   display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 0;
+  list-style: none;
+}
+.item {
+   flex-basis: calc((100% - 10px) / 2);
+}
+.item h2 {
+ margin-top: 20px;
+  font-size: 18px;
+}
+.item p {
+    margin: 0;
+}
+
 
  .project-container {
-   background-color: var(--color-container); 
+   background-color: var(--color-container);
+   cursor: pointer;
+  display: block;
+  margin:  0  auto ; 
 
  }
-
+ .project-list {
+  margin-bottom: 94px;
+  cursor: pointer;
+  display: block;
+  margin:  0  auto ;
+ }
+.project-item {
+  margin-bottom: 30px;
+}
 
 .project-subtitle {
   line-height: calc( 36 / 18) ;
   letter-spacing: 0.06em;
   color: var(--main-title-color);
 font-size: 18px;
+text-align: center;
+margin-bottom: 4px;
+margin-top: 20px;
+margin-left: 24px;
+margin-right: 24px;
 }
 .project-text {
   line-height: calc( 30 / 16 );
   letter-spacing: 0.03em;
   color: var(--second-title-color);
 font-size: 16px;
+text-align: center;
+margin-bottom: 20px;
+margin-left: 24px;
+margin-right: 24px;
+}
+.box {
+
+  border: 1px solid #EEEEEE;
+  
 }
 
 .footer {
   background-color:var(--background-footer-color);
+  margin-top: 94px;
 }
 .link-footer {
   color:var(--colr-header);
