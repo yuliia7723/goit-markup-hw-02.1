@@ -10,13 +10,16 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
     <title>business studio</title>
   </head>
   <body>
-    <header class="nav-header  container">
-      <nav>
+    <header class="nav-header container">
+      <nav class="header">
         <a href="./index.html" class="logo-web link">
           <span class="accent">Web</span>studio</a
         >
@@ -27,26 +30,28 @@
           </li>
 
           <li>
-            <a href="./portfolio.html" class="nav-link">Портфоліо</a>
+            <a href="./portfolio.html" class="nav-link portfolio">Портфоліо</a>
           </li>
 
-          <li>
-            <a href="" class="nav-link">Контакти</a>
+          <li class="">
+            <a href="" class="nav-link telepfon">Контакти</a>
           </li>
         </ul>
       </nav>
-      <ul class="contact-list list">
-        <li>
-          <a href="mailto:info@devstudio.com" class="contact-link"
-            >info@devstudio.com</a
-          >
-        </li>
-        <li>
-          <a href="tel:+380961111111" class="contact-link number"
-            >+38 096 111 11 11</a
-          >
-        </li>
-      </ul>
+      <div class="contact">
+        <ul class="contact-list list">
+          <li>
+            <a href="mailto:info@devstudio.com" class="contact-link mail"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li>
+            <a href="tel:+380961111111" class="contact-link number"
+              >+38 096 111 11 11</a
+            >
+          </li>
+        </ul>
+      </div>
     </header>
     <main>
       <section class="hero container section">
@@ -123,7 +128,7 @@
       </section>
       <section class="team container section">
         <h2 class="team-title">Наша команда</h2>
-        <ul class=" img-list list">
+        <ul class="img-list list section">
           <li>
             <img
               class="team-image"
@@ -136,13 +141,13 @@
             <p class="team-profession">Product Designer</p>
           </li>
           <li>
-            <img src="./img/about-img-71.jpg" alt="Ольга Рєпіна" width="270" />
+            <img class="team-image" src="./img/about-img-71.jpg" alt="Ольга Рєпіна" width="270" />
 
             <h3 class="team-name">Ольга Рєпіна</h3>
             <p class="team-profession">Frontend Developer</p>
           </li>
           <li>
-            <img
+            <img  class="team-image"
               src="./img/about-img-61.jpg"
               alt=" Микола Тарасов"
               width="270"
