@@ -194,6 +194,14 @@ max-width: 696px;
   display: block;
   margin: 0 auto;
   padding-left: 32px;
+  Effect: Drop shadow;
+Radius: 4px;
+Offset: 0px, 4px;
+padding-left: 32px;
+padding-right: 32px;
+padding-top: 10px;
+padding-bottom: 10px;
+margin-bottom: 210px;
 }
 .button-main:hover {
   color:var(--main-btn-color);
@@ -372,11 +380,25 @@ font-size: 26px;
   display: flex;
 }
 /* filter */
+
+
 .filter {
- 
+display: flex;
+
 }
 .button-list {
 
+}
+.button {
+  display: flex;
+  align-items: center;
+  margin-top: 94px;
+  margin-bottom: 94px;
+   width: 1200px;
+padding-left: 15px;
+padding-right: 15px;
+margin: 0 auto;
+outline: 2px;
 }
 
 .button-filter {
@@ -388,29 +410,31 @@ font-size: 26px;
   cursor: pointer;
   color: var(--color-btn-text);
 background-color: var(--color-main-btn);
+padding-left: 22px;
+padding-right: 22px;
+padding-top: 6px;
+padding-bottom: 6px;
+margin-right: 8px;
+min-width: 86px;
 }
 .button-filter:hover {
 background-color: var(--second-btn-color);
   color: var(--main-btn-color);
   
 }
-.button:focus {
+.button-filter:focus {
   color: var(--colr-header);
 background-color: var(--second-btn-color);
 }
 .button-filter:active {
   color:var(--second-btn-color);}
 
+
 /* project */
-.card-set {
-   display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  padding: 0;
-  list-style: none;
-}
+
+
 .item {
-   flex-basis: calc((100% - 10px) / 2);
+   flex-basis: calc((100% - 10px) / 4);
 }
 .item h2 {
  margin-top: 20px;
@@ -420,8 +444,7 @@ background-color: var(--second-btn-color);
     margin: 0;
 }
 
-
- .project-container {
+.project-container {
    background-color: var(--color-container);
    cursor: pointer;
   display: block;
@@ -431,16 +454,15 @@ background-color: var(--second-btn-color);
  .project-list {
   margin-bottom: 94px;
   cursor: pointer;
-  display: block;
-  margin:  0  auto ;
+   margin-right: 30px;
+}
 
- }
 .project-item {
-  margin-bottom: 30px;
+   margin-right: 30px;
 }
 
 .project-subtitle {
-  line-height: calc( 36 / 18) ;
+  line-height: calc( 36 / 18);
   letter-spacing: 0.06em;
   color: var(--main-title-color);
 font-size: 18px;
@@ -460,11 +482,10 @@ margin-bottom: 20px;
 margin-left: 24px;
 margin-right: 24px;
 }
-.box {
 
-  border: 1px solid #EEEEEE;
-  
-}
+.box {
+border: 1px solid #EEEEEE;
+  }
 
 .footer {
   background-color:var(--background-footer-color);
@@ -483,4 +504,15 @@ margin-right: 24px;
 .link-footer:focus {
   color:var(--second-btn-color);
 }
+.box {
+border: 1px solid #EEEEEE;
+  }
 
+.card-set {
+  margin-top: 50px;
+  margin-right: calc(-1 * 30px);
+  margin-bottom: calc(-1 * 30px);
+  display: flex;
+  flex-wrap: wrap;
+ 
+ }
