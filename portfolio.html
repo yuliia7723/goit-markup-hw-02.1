@@ -19,15 +19,15 @@
     <title>portfolio</title>
   </head>
   <body>
-    <header class="nav-header container">
-       <nav class="header">
+    <header class="nav-header">
+       <nav class="header-container container">
       <a href="./index.html" class="logo-web link"
         ><span class="accent">Web</span>Studio</a
       >
      
-        <ul class="nav-link list">
+        <ul class="header-container nav-link list">
           <li>
-            <a href="./index.html" class="nav-link studio">Студія</a>
+            <a href="./index.html" class=" nav-link studio">Студія</a>
           </li>
           <li>
             <a href="./portfolio.html" class="nav-link portfolio">Портфоліо</a>
@@ -36,7 +36,7 @@
             <a href="./portfolio.html" class="nav-link telepfon">Контакти</a>
           </li>
              </nav>
-          <div class="contact">
+          <div class="contact container">
             <li>
               <a href="mailto:info@devstudio.com" class="contact-link mail"
                 >info@devstudio.com</a
@@ -56,7 +56,7 @@
     <main>
       <section class="filter">
         <h1 class="visually-hidden">Портфолио</h1>
-        <ul class="button list container">
+        <ul class="button list container section">
           <li class="button-item">
             <button type="button" class="button-filter">Усі</button>
           </li>
@@ -75,7 +75,8 @@
         </ul>
       </section>
       <section class="section">
-        <ul class="project-list list card-set">
+        <div class="container">
+           <ul class="project-list list card-set">
           <li class="project-item item">
             <img
               src="./img/pfoto/art-img-9.jpg"
@@ -180,6 +181,8 @@
             </div>
           </li>
         </ul>
+
+        </div>
       </section>
     </main>
 
