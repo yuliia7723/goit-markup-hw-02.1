@@ -36,11 +36,16 @@ body {
   margin: 0;
   padding: 0;
   list-style: none;
-  box-sizing: border-box;
+  box-sizing: border-box;}
+
+html {
+   box-sizing: border-box;
 }
+  
+
 *,
-*::before,
-*::after {
+*::after,
+*::before {
   box-sizing: inherit;
 }
 p, h1, h2, h3, h4, h5, h6 {
@@ -224,6 +229,7 @@ margin: 118px;
 cursor: pointer;
   display: block;
   margin:  0  auto ;
+  padding-bottom: 0;
 }
 .feature-title {
   color: var(--main-title-color);
@@ -343,6 +349,8 @@ font-style: normal;
 
 .footer {
    background-color: var(--background-footer-color);
+   padding-top: 60px;
+   padding-bottom: 60px;
 }
 
 .logo-web-footer {
