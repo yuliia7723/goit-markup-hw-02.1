@@ -70,7 +70,6 @@ outline: 2px;
 .header-container {
 display: flex;
 align-items: center;
-gap: 50px;
 }
 
 .nav-header {
@@ -79,7 +78,9 @@ gap: 50px;
 
 
 .contact-list {
-
+display: flex;
+align-items: center;
+gap: 50px;
 }
 .header-connect {
 margin-left: auto;
@@ -92,6 +93,8 @@ font-weight: 500;
   line-height: calc(16 / 14);
   text-decoration: none;
 align-items: center;
+display: flex;
+gap: 50px;
 
 
 }
@@ -144,7 +147,7 @@ font-weight: 500;
   line-height: calc( 16 / 14 );
   letter-spacing: 0.02em;
   color:var(--second-title-color);
- margin-right: 50px;
+
  }
 
  .contact-link:hover {
@@ -260,9 +263,6 @@ gap: 30px;
  }
 
 /* /photo section about*/
-.about-image {
-  margin-right: 30px;
-}
 
 .section-title {
 font-size: 36px;
@@ -272,31 +272,27 @@ text-align: center;
 margin-bottom: 50px;
   
 }
-.section-title {
- 
-}
 .section-list {
  display: flex;
+ gap: 30px;
 }
 
 /* team */
 
 .team {
    background-color:var(--background-color-team); 
-   
-}
-.team-image {
-margin-right: 30px;
-padding-top: 50px;
+   padding-bottom: 0px;
 }
 .team-title {
 font-size: 36px;
 letter-spacing: 0,03;
  line-height: calc( 42 / 36 );
  text-align: center;
+ margin-bottom: 50px;
 }
 .img-list {
   display: flex;
+ gap: 30px;
  }
  
 .team-name {
@@ -305,6 +301,8 @@ font-size: 16px;
 letter-spacing: 0.03em;
  text-decoration: none;
  line-height:calc( 19 / 16 );
+  text-align: center;
+   padding-top: 30px;
  }
 
 .team-profession {
@@ -312,74 +310,14 @@ letter-spacing: 0.03em;
  font-size: 16px;
 letter-spacing: 0.03em;
  line-height: calc( 19 / 16 );
- }
- .prod-designer {
- text-align: center;
- }
- .designer-name {
-  padding-top: 30px;
- }
- .prof-designer {
   padding-top: 10px;
   padding-bottom: 30px;
- }
- .developer {
-   text-align: center;
- }
- .developer-name {
-  padding-top: 30px;
- }
- .prof-developer {
-   padding-top: 10px;
-  padding-bottom: 30px;
- }
- .marketing {
   text-align: center;
  }
- .marketing-name {
-  padding-top: 30px;
- }
- .prof-marketing {
-   padding-top: 10px;
-  padding-bottom: 30px;
- }
- .ul-designer {
-   text-align: center;
- }
- .ul-designer-name {
-  padding-top: 30px;
- }
- .prof-ul-designer {
-   padding-top: 10px;
-  padding-bottom: 30px;
-}
 
- .team-list {
-  
- }
-.img-list {
-
-}
 
 
 /* footer*/
-
-.footer-nav {
-
-}
-
-/* addres */
-
-
-.footer-contact-address-link {
-color: var(--color-header);
-letter-spacing: 0.03em;
- text-decoration: none;
- line-height: calc( 24 / 14 );
- font-style: normal;
- padding-top: 20px;
- display: block;
-}
 
 .footer-contact-link {
   color: rgb(255, 255, 255, 0.6);
@@ -411,31 +349,29 @@ font-size: 26px;
 }
 
 
+/* addres */
+
+.footer-contact-address-link {
+color: var(--color-header);
+letter-spacing: 0.03em;
+ text-decoration: none;
+ line-height: calc( 24 / 14 );
+ font-style: normal;
+ padding-top: 20px;
+ display: block;
+}
+
 
 
 
 /* second page */
 
 
-.contact {
-
-}
-
 .portfolio:visited {
   color: var(--second-btn-color);
 }
 
 /* filter */
-
-.filter {
-display: flex;
-
-}
-
-.button {
-  display: flex;
-  align-items: center;
-}
 
 .button-filter {
  font-family:inherit;
@@ -451,9 +387,21 @@ padding-right: 22px;
 padding-top: 6px;
 padding-bottom: 6px;
 margin-right: 8px;
-min-width: 86px;
+border-radius: 4px;
+border: none;
  
 }
+.filter {
+  padding-bottom: 0px;
+}
+
+
+
+.button {
+  display: flex;
+ gap: 8px;
+}
+
 .button-filter:hover {
 background-color: var(--second-btn-color);
   color: var(--main-btn-color);
@@ -469,32 +417,19 @@ background-color: var(--second-btn-color);
 
 /* project */
 
-
-.item {
-   flex-basis: calc((100% - 30px) / 3);
-}
-.item h2 {
- margin-top: 20px;
-  font-size: 18px;
-}
-.item p {
-    margin: 0;
-}
-
 .project-container {
    background-color: var(--color-container);
    cursor: pointer;
   display: block;
-  margin:  0  auto ; 
+    margin:  0  auto ; }
 
- }
- .project-list {
-cursor: pointer;
-   margin-right: 30px;
+.project {
+    width: calc((100%-60)) /3;
 }
 
-.project-item {
-   margin-right: 30px;
+ .project-list {
+display: flex;
+gap: 30px;
 }
 
 .project-subtitle {
@@ -552,3 +487,10 @@ border: 1px solid #EEEEEE;
   flex-wrap: wrap;
  
  }
+ .item h2 {
+ margin-top: 20px;
+  font-size: 18px;
+}
+.item p {
+    margin: 0;
+}
